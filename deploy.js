@@ -12,10 +12,12 @@ const web3 = new Web3(provider);
 
 const deploy = async () => {
 
+  let accounts
+
   console.log('Running Deploy....')
 
   try {
-    const accounts = await web3.eth.getAccounts();
+    accounts = await web3.eth.getAccounts();
     if(!accounts){
       console.log('No accounts found');
     }
