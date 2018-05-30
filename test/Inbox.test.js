@@ -3,6 +3,8 @@ const ganache = require('ganache-cli');
 const Web3 = require('web3');
 
 //*almost all web3 functions are async*
+//*sending takes time and requires gas*
+//*calling is immediate*
 
 //creates an instance of the web3 object and connects it to the provider.
 const provider = ganache.provider();
